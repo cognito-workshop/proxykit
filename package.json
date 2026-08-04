@@ -31,6 +31,10 @@
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cognito-workshop/proxykit.git"
+  },
   "engines": {
     "node": ">=18"
   },
