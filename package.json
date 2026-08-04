@@ -14,8 +14,6 @@
   "scripts": {
     "build": "node scripts/build.js",
     "dev": "node --watch src/cli.js",
-    "lint": "eslint src/",
-    "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.js",
     "prepublishOnly": "npm run build"
   },

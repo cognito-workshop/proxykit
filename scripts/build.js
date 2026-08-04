@@ -1,8 +1,10 @@
 import { build } from 'esbuild';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = path.resolve('..');
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, '..');
 
 async function buildCli() {
   await fs.rm(path.join(ROOT, 'dist'), { recursive: true, force: true });
@@ -25,8 +27,7 @@ async function buildCli() {
       js: '',
     },
     external: [
-      '@opentui/core',
-      '@opentui/react',
+      'ink',
       'react',
     ],
     define: {
