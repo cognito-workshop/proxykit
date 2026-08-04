@@ -20,12 +20,6 @@ async function buildCli() {
     outfile: path.join(ROOT, 'dist', 'cli.js'),
     minify: true,
     sourcemap: true,
-    banner: {
-      js: '#!/usr/bin/env node',
-    },
-    footer: {
-      js: '',
-    },
     external: [
       'ink',
       'react',
