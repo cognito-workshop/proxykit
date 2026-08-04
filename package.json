@@ -1,6 +1,6 @@
 {
   "name": "@cognito-workshop/proxykit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scaffold production-ready web proxies. Like create-t3-app but for the proxy community.",
   "type": "module",
   "bin": {
