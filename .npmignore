@@ -1,0 +1,8 @@
+tests/
+scripts/
+.github/
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
