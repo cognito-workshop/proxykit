@@ -1,0 +1,46 @@
+{
+  "name": "@cognito-workshop/proxykit",
+  "version": "0.1.2",
+  "description": "Scaffold production-ready web proxies. Like create-t3-app but for the proxy community.",
+  "type": "module",
+  "bin": {
+    "proxykit": "./bin/proxykit.js"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node --watch src/cli.js",
+    "test": "node --test tests/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "proxy",
+    "ultraviolet",
+    "scramjet",
+    "rammerhead",
+    "wisp",
+    "bare",
+    "epoxy",
+    "scaffold",
+    "cli",
+    "create"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cognito-workshop/proxykit.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "ink": "^7.1.1",
+    "react": "^19.2.8"
+  }
+}
